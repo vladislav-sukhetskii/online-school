@@ -92,4 +92,60 @@ public class FirstSteps {
         return result;
     }
 
+    public double average(int[] array) {
+        int arraySum = 0;
+        double result;
+        if (array.length > 0) {
+            for (int x : array) {
+                arraySum += x;
+            }
+            result = arraySum / (double) (array.length);
+        } else result = 0;
+        return result;
+    }
+
+    public boolean isSortedDescendant(int[] array) {
+        boolean result = true;
+        for (int i = 0; i < (array.length - 1); i++) {
+            if (array[i] <= array[i + 1]) {
+                result = false;
+                break;
+            }
+        }
+        return result;
+    }
+
+    public void cube(int[] array) {
+        int[] result = array;
+        int exp = 3;
+        for (int i = 0; i < array.length; i++) {
+            array[i] = (int) Math.pow(array[i], exp);
+        }
+    }
+
+    public boolean find(int[] array, int value) {
+        boolean result = false;
+        for (int element : array) {
+            if (element == value) result = true;
+        }
+        return result;
+    }
+
+    public void reverse(int[] array) {
+        int c = 0;
+        int x=0;
+        int end = 0;
+        int len = array.length;
+        for (int i = 0; i < (array.length / 2); i++) {
+            end = len - i;
+            c = array[i];
+            x = array[end-1];
+
+            /*
+            array[i] = x;
+            array[end-1] = c;
+            */
+
+        }
+    }
 }

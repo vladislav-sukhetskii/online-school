@@ -108,7 +108,7 @@ public class TestFirstSteps {
         int[] array2 = {};
         assertEquals(Integer.MIN_VALUE, firstSteps.max(array2));
     }
-/*
+
     @Test
     public void testAverageArray() {
         FirstSteps firstSteps = new FirstSteps();
@@ -175,7 +175,7 @@ public class TestFirstSteps {
         firstSteps.reverse(array4);
         assertArrayEquals(arrayResult4, array4);
     }
-
+/*
     @Test
     public void testIsPalindromeArray() {
         FirstSteps firstSteps = new FirstSteps();
