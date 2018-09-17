@@ -175,7 +175,7 @@ public class TestFirstSteps {
         firstSteps.reverse(array4);
         assertArrayEquals(arrayResult4, array4);
     }
-/*
+
     @Test
     public void testIsPalindromeArray() {
         FirstSteps firstSteps = new FirstSteps();
@@ -233,5 +233,5 @@ public class TestFirstSteps {
         assertTrue(firstSteps.isSortedDescendant(matrix4));
         int[][] matrix5 = {{5, 4, 3, 2, 1}, {12, 5, 4, 3}, {34, 12, 10, 9, 8, 7, 6}};
         assertTrue(firstSteps.isSortedDescendant(matrix5));
-    }*/
+    }
 }
