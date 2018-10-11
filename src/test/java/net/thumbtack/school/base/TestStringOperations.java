@@ -54,7 +54,7 @@ public class TestStringOperations {
         assertTrue(StringOperations.isSameLastCharPosition(first, second, 'n'));
         assertFalse(StringOperations.isSameLastCharPosition(first, second, 'a'));
     }
-/*
+
     @Test
     public void testIsSameFirstStringPosition() {
         String first = "Hello";
@@ -328,6 +328,6 @@ public class TestStringOperations {
         assertEquals("0123456789", StringOperations.insertCharacters("13456789", new int[]{0, 1}, new char[]{'0', '2'}).toString());
         assertEquals("0123456789", StringOperations.insertCharacters("13579", new int[]{0, 1, 2, 3, 4}, new char[]{'0', '2', '4', '6', '8'}).toString());
         assertEquals("0123456789", StringOperations.insertCharacters("19", new int[]{0, 1, 1, 1, 1, 1, 1, 1}, new char[]{'0', '2', '3', '4', '5', '6', '7', '8'}).toString());
-    }*/
+    }
 
 }

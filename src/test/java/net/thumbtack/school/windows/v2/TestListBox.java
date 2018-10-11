@@ -7,7 +7,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class TestListBox {
-/*
+
     @Test
     public void testListBox1() {
 
@@ -452,5 +452,5 @@ public class TestListBox {
     public void testListBoxSortedDescendant3() {
         ListBox listBox = new ListBox(10, 20, 30, 40, null);
         assertTrue(listBox.isSortedDescendant());
-    }*/
+    }
 }

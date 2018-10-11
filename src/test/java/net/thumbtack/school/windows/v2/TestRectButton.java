@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class TestRectButton {
-/*
+
     @Test
     public void testRectButton1() {
         Point topLeft = new Point(10, 20);
@@ -240,5 +240,5 @@ public class TestRectButton {
         RectButton rectButton = new RectButton(10, 20, 30, 40, "OK");
         rectButton.setText("Cancel");
         assertEquals("Cancel", rectButton.getText());
-    }*/
+    }
 }

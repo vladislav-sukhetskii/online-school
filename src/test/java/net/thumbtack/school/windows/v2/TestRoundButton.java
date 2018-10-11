@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class TestRoundButton {
-/*
+
     @Test
     public void testRoundButton1() {
         Point center = new Point(10, 20);
@@ -161,6 +161,6 @@ public class TestRoundButton {
         RoundButton roundButton = new RoundButton(new Point(10, 10), 10, "OK");
         roundButton.setText("Cancel");
         assertEquals("Cancel", roundButton.getText());
-    }*/
+    }
 
 }

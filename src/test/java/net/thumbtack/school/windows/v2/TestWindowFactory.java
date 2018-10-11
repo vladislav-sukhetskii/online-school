@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class TestWindowFactory {
-/*
+
     @Test
     @SuppressWarnings("unused")
     public void testWindowFactory() {
@@ -19,6 +19,6 @@ public class TestWindowFactory {
         assertEquals(5, WindowFactory.getWindowCount());
         WindowFactory.reset();
         assertEquals(0, WindowFactory.getWindowCount());
-    }*/
+    }
 
 }

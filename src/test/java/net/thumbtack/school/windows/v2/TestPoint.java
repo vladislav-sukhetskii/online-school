@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class TestPoint {
-/*
+
     @Test
     public void testPoint1() {
         Point point = new Point(100, 200);
@@ -96,5 +96,5 @@ public class TestPoint {
         assertFalse(point.isVisibleOnDesktop(desktop));
         assertTrue(point.isNotVisibleOnDesktop(desktop));
     }
-*/
+
 }

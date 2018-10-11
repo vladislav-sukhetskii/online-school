@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 
 public class TestNumberOperations {
-/*
+
     @Test
     public void testFindInteger() {
         assertEquals((Integer) 3, NumberOperations.find(new int[]{0, 2, 4, 6, 8}, 6));
@@ -67,5 +67,5 @@ public class TestNumberOperations {
         assertEquals(new BigDecimal(3.5), NumberOperations.calculateDensity(new BigDecimal("7E10000"), new BigDecimal("2E10000"), new BigDecimal(-10), new BigDecimal(10)));
         assertNull(NumberOperations.calculateDensity(new BigDecimal("7E1002"), new BigDecimal("2E1000"), new BigDecimal(-10), new BigDecimal(10)));
         assertNull(NumberOperations.calculateDensity(new BigDecimal("1E-6000"), new BigDecimal("2E-1000"), new BigDecimal(1), new BigDecimal(10)));
-    }*/
+    }
 }
