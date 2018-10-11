@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="21" failures="0" name="net.thumbtack.school.introduction.TestFirstSteps" time="0.002" errors="0" skipped="0">
+<testsuite tests="38" failures="0" name="net.thumbtack.school.windows.v2.TestListBox" time="0.005" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin"/>
@@ -63,25 +63,42 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testAverageArray" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testSortedDescendantMatrixRows" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testDiv" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testMod" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testMul" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testSum" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testIsInsideRect" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testSumArray" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testMinArray" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testCubeArray" time="0.002"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testDiagonalMaxMatrix" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testFindValueArray" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testGreater" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testMaxMatrix" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testIsPalindromeArray" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testReverseArray" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testMaxArray" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testSumMatrix" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testMulArray" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testEquals" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testSortedDescendantArray" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testIsListBoxInsideListBox" time="0.002"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testListBoxSetLine" time="0.002"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testSetListBox" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testMoveRelListBox" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testListBoxSortedDescendant1" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testListBoxSortedDescendant2" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testListBoxSortedDescendant3" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testListBoxFindLine" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testResizeListBox" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testListBoxSetLines1" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testListBoxSetLines2" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testListBoxesAreEqual" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testListBoxReverseLineOrder1" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testListBoxReverseLineOrder2" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testListBoxReverseLineOrder3" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testListBoxReverseLines1" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testListBoxReverseLines2" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testListBoxRemoveLines1" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testListBoxRemoveLines2" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testListBoxRemoveLines3" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testListBoxRemoveLines4" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testIsPointInsideListBox1" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testIsPointInsideListBox2" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testIsIntersectsListBox" time="0.001"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testIsFullyVisibleOnDesktop" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testSliceListBox1" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testSliceListBox2" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testMoveToListBox1" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testMoveToListBox2" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testListBoxGetLine1" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testListBoxGetLine2" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testListBoxDuplicateLines1" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testListBoxDuplicateLines2" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testListBox1" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testListBox2" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testListBox3" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testListBox4" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestListBox" name="testListBox5" time="0"/>
 </testsuite>

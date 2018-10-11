@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="21" failures="0" name="net.thumbtack.school.introduction.TestFirstSteps" time="0.002" errors="0" skipped="0">
+<testsuite tests="3" failures="0" name="net.thumbtack.school.windows.v2.TestDesktop" time="0" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin"/>
@@ -63,25 +63,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testAverageArray" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testSortedDescendantMatrixRows" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testDiv" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testMod" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testMul" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testSum" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testIsInsideRect" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testSumArray" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testMinArray" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testCubeArray" time="0.002"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testDiagonalMaxMatrix" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testFindValueArray" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testGreater" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testMaxMatrix" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testIsPalindromeArray" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testReverseArray" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testMaxArray" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testSumMatrix" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testMulArray" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testEquals" time="0"/>
-  <testcase classname="net.thumbtack.school.introduction.TestFirstSteps" name="testSortedDescendantArray" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestDesktop" name="testDesktopsAreEqual" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestDesktop" name="testVgaDesktop" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestDesktop" name="testDesktop" time="0"/>
 </testsuite>

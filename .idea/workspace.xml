@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f9284ac-a62c-4536-9336-6b8f5f06430a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/base/NumberOperations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v2/Desktop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v2/ListBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v2/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v2/RectButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v2/RoundButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v2/WindowFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/base/StringOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/base/StringOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/base/TestNumberOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/base/TestNumberOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/base/TestStringOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/base/TestStringOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v2/TestDesktop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v2/TestDesktop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v2/TestListBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v2/TestListBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v2/TestPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v2/TestPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v2/TestRectButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v2/TestRectButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v2/TestRoundButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v2/TestRoundButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v2/TestWindowFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v2/TestWindowFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,12 +58,88 @@
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
     </session>
+    <session id="-957342973">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="3" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="3" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="12" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="12" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="lessons" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/base/StringOperations.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v2/ListBox.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2434#2435#0" expanded="true" />
+                <element signature="e#2468#2469#0" expanded="true" />
+                <element signature="e#2505#2506#0" expanded="true" />
+                <element signature="e#2543#2544#0" expanded="true" />
+                <element signature="e#2576#2577#0" expanded="true" />
+                <element signature="e#2609#2610#0" expanded="true" />
+                <element signature="e#3548#3549#0" expanded="true" />
+                <element signature="e#3583#3584#0" expanded="true" />
+                <element signature="e#3612#3613#0" expanded="true" />
+                <element signature="e#3644#3645#0" expanded="true" />
+                <element signature="e#3674#3675#0" expanded="true" />
+                <element signature="e#3707#3708#0" expanded="true" />
+                <element signature="e#3741#3742#0" expanded="true" />
+                <element signature="e#3773#3774#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-153" />
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -128,6 +189,7 @@
         <option value="$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v2/RoundButton.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v2/RectButton.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v2/TestListBox.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sun/istack/internal/NotNull.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v2/ListBox.java" />
       </list>
     </option>
@@ -167,107 +229,23 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
-              <item name="online-school" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
-              <item name="online-school" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
-              <item name="online-school" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
-              <item name="online-school" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
-              <item name="online-school" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="school" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
-              <item name="online-school" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="school" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
-              <item name="online-school" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="school" type="462c0819:PsiDirectoryNode" />
-              <item name="introduction" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
-              <item name="online-school" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="school" type="462c0819:PsiDirectoryNode" />
-              <item name="windows" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
-              <item name="online-school" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="school" type="462c0819:PsiDirectoryNode" />
-              <item name="windows" type="462c0819:PsiDirectoryNode" />
-              <item name="v2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
-              <item name="online-school" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
-              <item name="online-school" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
-              <item name="online-school" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="school" type="462c0819:PsiDirectoryNode" />
+              <item name="Thumbtack" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539281570530" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539285324362" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -393,15 +371,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestListBox - 2018.10.11 at 20h 56m 02s.xml">
-      <configuration name="TestListBox" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestListBox - 2018.10.11 at 20h 59m 51s.xml">
-      <configuration name="TestListBox" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestListBox - 2018.10.11 at 21h 02m 07s.xml">
-      <configuration name="TestListBox" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestListBox - 2018.10.11 at 21h 02m 10s.xml">
       <configuration name="TestListBox" configurationId="JUnit" />
     </history-entry>
@@ -423,6 +392,15 @@
     <history-entry file="All_in_lessons - 2018.10.11 at 21h 12m 51s.xml">
       <configuration name="All in lessons" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_lessons - 2018.10.11 at 21h 28m 01s.xml">
+      <configuration name="All in lessons" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_lessons - 2018.10.11 at 21h 29m 48s.xml">
+      <configuration name="All in lessons" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_lessons - 2018.10.11 at 21h 31m 12s.xml">
+      <configuration name="All in lessons" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -436,8 +414,8 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6106291" visible="true" weight="0.29637527" />
-      <window_info id="Structure" order="1" sideWeight="0.38937092" side_tool="true" visible="true" weight="0.29637527" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.60954446" visible="true" weight="0.29957357" />
+      <window_info id="Structure" order="1" sideWeight="0.39045554" side_tool="true" visible="true" weight="0.29957357" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -461,7 +439,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32995737" />
+      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.32995737" />
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32995737" />
     </layout>
   </component>
@@ -561,16 +539,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/thumbtack/school/base/TestNumberOperations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v1/RoundButton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -587,8 +555,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/base/NumberOperations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-399">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="15" selection-end-column="22" />
+        <state relative-caret-position="68">
+          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -620,9 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -630,9 +595,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -689,10 +651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="386">
           <caret line="121" column="37" selection-start-line="121" selection-start-column="37" selection-end-line="121" selection-end-column="37" />
-          <folding>
-            <element signature="e#3993#3994#0" expanded="true" />
-            <element signature="e#4084#4085#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -750,10 +708,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v2/TestListBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="376" column="30" lean-forward="true" selection-start-line="376" selection-start-column="28" selection-end-line="376" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/thumbtack/school/base/TestNumberOperations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/base/StringOperations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="53" column="30" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="30" />
+        <state relative-caret-position="187">
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/istack/internal/NotNull.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -762,18 +752,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v2/ListBox.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-586">
-          <caret line="178" column="30" selection-start-line="178" selection-start-column="30" selection-end-line="178" selection-end-column="30" />
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2434#2435#0" expanded="true" />
+            <element signature="e#2468#2469#0" expanded="true" />
+            <element signature="e#2505#2506#0" expanded="true" />
+            <element signature="e#2543#2544#0" expanded="true" />
+            <element signature="e#2576#2577#0" expanded="true" />
+            <element signature="e#2609#2610#0" expanded="true" />
+            <element signature="e#3548#3549#0" expanded="true" />
+            <element signature="e#3583#3584#0" expanded="true" />
+            <element signature="e#3612#3613#0" expanded="true" />
+            <element signature="e#3644#3645#0" expanded="true" />
+            <element signature="e#3674#3675#0" expanded="true" />
+            <element signature="e#3707#3708#0" expanded="true" />
+            <element signature="e#3741#3742#0" expanded="true" />
+            <element signature="e#3773#3774#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v2/TestListBox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="376" column="30" lean-forward="true" selection-start-line="376" selection-start-column="28" selection-end-line="376" selection-end-column="30" />
         </state>
       </provider>
     </entry>

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: net.thumbtack.school.introduction.TestFirstSteps
+Test set: net.thumbtack.school.windows.v2.TestRectButton
 -------------------------------------------------------------------------------
-Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
