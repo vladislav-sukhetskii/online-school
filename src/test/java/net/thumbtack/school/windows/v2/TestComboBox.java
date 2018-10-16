@@ -7,7 +7,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class TestComboBox {
-/*
+
     @Test
     public void testComboBox1() {
 
@@ -531,5 +531,5 @@ public class TestComboBox {
     public void testComboBoxSortedDescendant3() {
         ComboBox comboBox = new ComboBox(10, 20, 30, 40, null, null);
         assertTrue(comboBox.isSortedDescendant());
-    }*/
+    }
 }

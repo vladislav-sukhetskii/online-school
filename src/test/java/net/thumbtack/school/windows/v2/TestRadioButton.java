@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class TestRadioButton {
-/*
+
     @Test
     public void testRadioButton1() {
         Point center = new Point(10, 20);
@@ -172,5 +172,5 @@ public class TestRadioButton {
         radioButton.setText("Cancel");
         assertEquals("Cancel", radioButton.getText());
     }
-*/
+
 }

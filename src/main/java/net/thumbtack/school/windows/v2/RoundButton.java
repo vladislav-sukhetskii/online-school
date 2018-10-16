@@ -4,11 +4,8 @@ import java.util.Objects;
 
 public class RoundButton {
     private Point buttonCenter;
-    private Point secondButtonCenter;
     private int buttonRadius;
     private boolean buttonIsActive;
-    private int buttonCenterX;
-    private int buttonCenterY;
     private String buttonText;
 
     public RoundButton(Point center, int radius, boolean active, String text) {
@@ -19,8 +16,6 @@ public class RoundButton {
     }
 
     public RoundButton(int xCenter, int yCenter, int radius, boolean active, String text) {
-        buttonCenterX = xCenter;
-        buttonCenterY = yCenter;
         buttonCenter = new Point(xCenter, yCenter);
         buttonRadius = radius;
         buttonIsActive = active;
@@ -35,8 +30,6 @@ public class RoundButton {
     }
 
     public RoundButton(int xCenter, int yCenter, int radius, String text) {
-        buttonCenterX = xCenter;
-        buttonCenterY = yCenter;
         buttonCenter = new Point(xCenter, yCenter);
         buttonRadius = radius;
         buttonIsActive = true;
