@@ -2,7 +2,6 @@ package net.thumbtack.school.base;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
-import java.util.Arrays;
 
 public class NumberOperations {
     public static Integer find(int[] array, int value) {

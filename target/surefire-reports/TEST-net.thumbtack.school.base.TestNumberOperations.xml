@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="net.thumbtack.school.base.TestNumberOperations" time="0.008" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="net.thumbtack.school.base.TestNumberOperations" time="0.005" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2018.2.3"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -62,9 +62,9 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="net.thumbtack.school.base.TestNumberOperations" name="testCalculateDensityDouble" time="0.006"/>
+  <testcase classname="net.thumbtack.school.base.TestNumberOperations" name="testCalculateDensityDouble" time="0.003"/>
   <testcase classname="net.thumbtack.school.base.TestNumberOperations" name="testFindDouble" time="0"/>
-  <testcase classname="net.thumbtack.school.base.TestNumberOperations" name="testCalculateDensityBigDecimal" time="0.002"/>
-  <testcase classname="net.thumbtack.school.base.TestNumberOperations" name="testFindBigInteger" time="0"/>
+  <testcase classname="net.thumbtack.school.base.TestNumberOperations" name="testCalculateDensityBigDecimal" time="0.001"/>
+  <testcase classname="net.thumbtack.school.base.TestNumberOperations" name="testFindBigInteger" time="0.001"/>
   <testcase classname="net.thumbtack.school.base.TestNumberOperations" name="testFindInteger" time="0"/>
 </testsuite>

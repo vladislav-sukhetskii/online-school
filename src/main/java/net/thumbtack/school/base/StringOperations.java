@@ -1,7 +1,7 @@
 package net.thumbtack.school.base;
 
 import java.text.DecimalFormat;
-import java.util.Formatter;
+import java.util.StringJoiner;
 
 public class StringOperations {
 
@@ -14,13 +14,7 @@ public class StringOperations {
     }
 
     public static String getFirstAndLastLetterString(String string) {
-        char first, last;
-        String firstAndLast;
-        first = string.charAt(0);
-        last = string.charAt(string.length() - 1);
-        char[] newStr = new char[]{first, last};
-        firstAndLast = new String(newStr);
-        return firstAndLast;
+        return string.substring(0, 1).concat(string.substring(string.length() - 1));
     }
 
     public static boolean isSameCharAtPosition(String string1, String string2, int index) {
@@ -84,7 +78,7 @@ public class StringOperations {
         String result;
         int lenght = (string1.length() < string2.length()) ? string1.length() : string2.length();
         for (int i = 0; i < lenght; i++) {
-            if (StringOperations.isSameCharAtPosition(string1, string2, i) == true) {
+            if (StringOperations.isSameCharAtPosition(string1, string2, i)) {
                 j++;
             } else break;
         }
@@ -137,59 +131,36 @@ public class StringOperations {
     }
 
     public static String makeCsvStringFromInts(int[] array) {
+        StringJoiner sj = new StringJoiner(",");
         String result = "";
-        StringBuilder sb = new StringBuilder();
         if (array.length > 0) {
             for (int element : array) {
-                sb.append(element);
-                sb.append(",");
+                sj.add(Integer.toString(element));
             }
-            sb.deleteCharAt(sb.length() - 1);
-            result = sb.toString();
+            result = sj.toString();
         }
         return result;
     }
 
     public static String makeCsvStringFromDoubles(double[] array) {
         String result = "";
-        StringBuilder sb = new StringBuilder();
+        StringJoiner sj = new StringJoiner(",");
         DecimalFormat fmt = new DecimalFormat("000.00");
         if (array.length > 0) {
             for (double element : array) {
-
-                sb.append(fmt.format(element));
-                sb.append(",");
+                sj.add(fmt.format(element));
             }
-            sb.deleteCharAt(sb.length() - 1);
-            result = sb.toString();
+            result = sj.toString();
         }
         return result;
     }
 
     public static StringBuilder makeCsvStringBuilderFromInts(int[] array) {
-        StringBuilder sb = new StringBuilder();
-        if (array.length > 0) {
-            for (int element : array) {
-                sb.append(element);
-                sb.append(",");
-            }
-            sb.deleteCharAt(sb.length() - 1);
-        }
-        return sb;
+        return new StringBuilder().append(makeCsvStringFromInts(array));
     }
 
     public static StringBuilder makeCsvStringBuilderFromDoubles(double[] array) {
-        StringBuilder sb = new StringBuilder();
-        DecimalFormat fmt = new DecimalFormat("000.00");
-        if (array.length > 0) {
-            for (double element : array) {
-
-                sb.append(fmt.format(element));
-                sb.append(",");
-            }
-            sb.deleteCharAt(sb.length() - 1);
-        }
-        return sb;
+        return new StringBuilder().append(makeCsvStringFromDoubles(array));
     }
 
     public static StringBuilder removeCharacters(String string, int[] positions) {
@@ -205,10 +176,10 @@ public class StringOperations {
 
     public static StringBuilder insertCharacters(String string, int[] positions, char[] characters) {
         StringBuilder sb = new StringBuilder();
-        int j=0;
+        int j = 0;
         sb.append(string);
-        for (int i=0; i<positions.length;i++) {
-            sb.insert(positions[i]+j, characters[i]);
+        for (int i = 0; i < positions.length; i++) {
+            sb.insert(positions[i] + j, characters[i]);
             j++;
 
         }

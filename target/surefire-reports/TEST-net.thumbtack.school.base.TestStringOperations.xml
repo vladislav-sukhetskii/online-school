@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="30" failures="0" name="net.thumbtack.school.base.TestStringOperations" time="0.001" errors="0" skipped="0">
+<testsuite tests="30" failures="0" name="net.thumbtack.school.base.TestStringOperations" time="0.006" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2018.2.3"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -65,17 +65,17 @@
   <testcase classname="net.thumbtack.school.base.TestStringOperations" name="testHasSameSubstring" time="0"/>
   <testcase classname="net.thumbtack.school.base.TestStringOperations" name="testGetSummaryLength" time="0"/>
   <testcase classname="net.thumbtack.school.base.TestStringOperations" name="testGetFirstAndLastLetterString" time="0"/>
-  <testcase classname="net.thumbtack.school.base.TestStringOperations" name="testMakeCsvStringFromDoubles" time="0"/>
+  <testcase classname="net.thumbtack.school.base.TestStringOperations" name="testMakeCsvStringFromDoubles" time="0.002"/>
   <testcase classname="net.thumbtack.school.base.TestStringOperations" name="testEqualAfterReplaceStrings" time="0"/>
   <testcase classname="net.thumbtack.school.base.TestStringOperations" name="testMakeCsvStringFromInts" time="0"/>
   <testcase classname="net.thumbtack.school.base.TestStringOperations" name="testAreEqualsIgnoreCase" time="0"/>
   <testcase classname="net.thumbtack.school.base.TestStringOperations" name="testMakeCsvStringBuilderFromDoubles" time="0"/>
   <testcase classname="net.thumbtack.school.base.TestStringOperations" name="testMakeCsvStringBuilderFromInts" time="0"/>
   <testcase classname="net.thumbtack.school.base.TestStringOperations" name="testIsLessIgnoreCase" time="0"/>
-  <testcase classname="net.thumbtack.school.base.TestStringOperations" name="testIsPalindromeIgnoreCase" time="0"/>
+  <testcase classname="net.thumbtack.school.base.TestStringOperations" name="testIsPalindromeIgnoreCase" time="0.001"/>
   <testcase classname="net.thumbtack.school.base.TestStringOperations" name="testIsEqualAfterTrimming" time="0"/>
   <testcase classname="net.thumbtack.school.base.TestStringOperations" name="testAreEquals" time="0"/>
-  <testcase classname="net.thumbtack.school.base.TestStringOperations" name="testIsPalindromeAfterRemovingSpaces" time="0.001"/>
+  <testcase classname="net.thumbtack.school.base.TestStringOperations" name="testIsPalindromeAfterRemovingSpaces" time="0.002"/>
   <testcase classname="net.thumbtack.school.base.TestStringOperations" name="testEqualAfterReplaceCharacters" time="0"/>
   <testcase classname="net.thumbtack.school.base.TestStringOperations" name="testGetLongestPalindromeIgnoreCase" time="0"/>
   <testcase classname="net.thumbtack.school.base.TestStringOperations" name="testIsPalindrome" time="0"/>
@@ -85,7 +85,7 @@
   <testcase classname="net.thumbtack.school.base.TestStringOperations" name="testIsSameFirstCharPosition" time="0"/>
   <testcase classname="net.thumbtack.school.base.TestStringOperations" name="testRemoveCharacters" time="0"/>
   <testcase classname="net.thumbtack.school.base.TestStringOperations" name="testConcat" time="0"/>
-  <testcase classname="net.thumbtack.school.base.TestStringOperations" name="testIsSamePrefix" time="0"/>
+  <testcase classname="net.thumbtack.school.base.TestStringOperations" name="testIsSamePrefix" time="0.001"/>
   <testcase classname="net.thumbtack.school.base.TestStringOperations" name="testIsLess" time="0"/>
   <testcase classname="net.thumbtack.school.base.TestStringOperations" name="testIsSameSuffix" time="0"/>
   <testcase classname="net.thumbtack.school.base.TestStringOperations" name="testGetCommonPrefix" time="0"/>

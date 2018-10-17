@@ -1,8 +1,8 @@
 package net.thumbtack.school.windows.v2;
 
 public class WindowFactory {
-    static private int rectCount = 0;
-    static private int roundCount = 0;
+    private static int rectCount = 0;
+    private static int roundCount = 0;
 
     public static RectButton createRectButton(Point leftTop, Point rightBottom, boolean active, String text) {
         RectButton newRectButton = new RectButton(leftTop, rightBottom, active, text);
@@ -25,13 +25,11 @@ public class WindowFactory {
     }
 
     public static int getWindowCount() {
-        return WindowFactory.rectCount + WindowFactory.roundCount;
+        return rectCount + roundCount;
     }
 
     public static void reset() {
         rectCount = 0;
         roundCount = 0;
     }
-
-
 }

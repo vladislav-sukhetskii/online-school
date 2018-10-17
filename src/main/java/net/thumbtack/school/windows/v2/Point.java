@@ -4,8 +4,7 @@ import java.util.Objects;
 
 public class Point {
 
-    private int xPoint;
-    private int yPoint;
+    private int xPoint,yPoint;
 
     public Point(int x, int y) {
         xPoint = x;
@@ -13,13 +12,11 @@ public class Point {
     }
 
     public Point() {
-        xPoint = 0;
-        yPoint = 0;
+        this(0,0);
     }
 
     public Point(Point point) {
-        this.yPoint = point.yPoint;
-        this.xPoint = point.yPoint;
+        this(point.getX(),point.getY());
     }
 
     public int getX() {
@@ -49,15 +46,11 @@ public class Point {
     }
 
     public boolean isVisibleOnDesktop(Desktop desktop) {
-        int desktopX = desktop.getWidth();
-        int desktopY = desktop.getHeight();
-        return xPoint < desktopX && xPoint >= 0 && yPoint >= 0 && yPoint < desktopY;
+        return xPoint < desktop.getWidth() && xPoint >= 0 && yPoint >= 0 && yPoint < desktop.getHeight();
     }
 
     public boolean isNotVisibleOnDesktop(Desktop desktop) {
-        int desktopX = desktop.getWidth();
-        int desktopY = desktop.getHeight();
-        return xPoint >= desktopX || xPoint < 0 || yPoint < 0 || yPoint >= desktopY;
+        return xPoint >= desktop.getWidth() || xPoint < 0 || yPoint < 0 || yPoint >= desktop.getHeight();
     }
 
     @Override

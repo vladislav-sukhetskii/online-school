@@ -3,8 +3,7 @@ package net.thumbtack.school.windows.v1;
 import java.util.Objects;
 
 public class Desktop {
-    private int desktopWidth;
-    private int desktopHeight;
+    private int desktopWidth, desktopHeight;
 
     public Desktop(int width, int height) {
         desktopWidth = width;
@@ -12,8 +11,7 @@ public class Desktop {
     }
 
     public Desktop() {
-        desktopWidth = 640;
-        desktopHeight = 480;
+        this(640,480);
     }
 
     public int getWidth() {

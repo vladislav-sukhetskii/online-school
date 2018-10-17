@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="13" failures="0" name="net.thumbtack.school.windows.v1.TestRoundButton" time="0" errors="0" skipped="0">
+<testsuite tests="13" failures="0" name="net.thumbtack.school.windows.v1.TestRoundButton" time="0.002" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2018.2.3"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -62,14 +62,14 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="net.thumbtack.school.windows.v1.TestRoundButton" name="testMoveRelRoundButton" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v1.TestRoundButton" name="testMoveRelRoundButton" time="0.001"/>
   <testcase classname="net.thumbtack.school.windows.v1.TestRoundButton" name="testRoundButton1" time="0"/>
   <testcase classname="net.thumbtack.school.windows.v1.TestRoundButton" name="testRoundButton2" time="0"/>
   <testcase classname="net.thumbtack.school.windows.v1.TestRoundButton" name="testRoundButton3" time="0"/>
   <testcase classname="net.thumbtack.school.windows.v1.TestRoundButton" name="testRoundButton4" time="0"/>
   <testcase classname="net.thumbtack.school.windows.v1.TestRoundButton" name="testMoveToRoundButton1" time="0"/>
   <testcase classname="net.thumbtack.school.windows.v1.TestRoundButton" name="testMoveToRoundButton2" time="0"/>
-  <testcase classname="net.thumbtack.school.windows.v1.TestRoundButton" name="testSetRoundButton" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v1.TestRoundButton" name="testSetRoundButton" time="0.001"/>
   <testcase classname="net.thumbtack.school.windows.v1.TestRoundButton" name="testIsFullyVisibleOnDesktop" time="0"/>
   <testcase classname="net.thumbtack.school.windows.v1.TestRoundButton" name="testResizeRoundButton" time="0"/>
   <testcase classname="net.thumbtack.school.windows.v1.TestRoundButton" name="testIsPointInsideRoundButton1" time="0"/>

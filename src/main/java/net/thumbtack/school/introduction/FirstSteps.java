@@ -3,108 +3,84 @@ package net.thumbtack.school.introduction;
 public class FirstSteps {
 
     public int sum(int x, int y) {
-        int result;
-        result = x + y;
-        return result;
+        return x + y;
     }
-
 
     public int mul(int x, int y) {
-        int result;
-        result = x * y;
-        return result;
+        return x * y;
     }
-
 
     public int div(int x, int y) {
-        int result;
-        result = x / y;
-        return result;
+        return x / y;
     }
-
 
     public int mod(int x, int y) {
-        int result;
-        result = x % y;
-        return result;
+        return x % y;
     }
-
 
     public boolean isEqual(int x, int y) {
-        boolean result;
-        result = x == y;
-        return result;
+        return x == y;
     }
-
 
     public boolean isGreater(int x, int y) {
-        boolean result;
-        result = x > y;
-        return result;
+        return x > y;
     }
-
 
     public boolean isInsideRect(int xLeft, int yTop, int xRight, int yBottom, int x, int y) {
-        boolean result;
-        result = ((x >= xLeft) && (x <= xRight)) && ((y >= yTop) && (y <= yBottom));
-        return result;
+        return ((x >= xLeft) && (x <= xRight)) && ((y >= yTop) && (y <= yBottom));
     }
-
 
     public int sum(int[] array) {
         int result = 0;
-        for (int i = 0; i < array.length; i++) {
-            result += array[i];
+        for (int element : array) {
+            result += element;
         }
         return result;
     }
 
-
     public int mul(int[] array) {
-        int result = 1;
+        int result = 0;
         if (array.length > 0) {
-            for (int i = 0; i < array.length; i++) {
-                result *= array[i];
+            result = 1;
+            for (int element : array) {
+                result *= element;
             }
-        } else result = 0;
+        }
         return result;
     }
 
-
     public int min(int[] array) {
-        int indexMin = 0, result;
+        int result = Integer.MAX_VALUE;
         if (array.length > 0) {
-            for (int i = 0; i < array.length; i++) {
-                if (array[i] < array[indexMin]) {
-                    indexMin = i;
+            for (int element : array) {
+                if (element < result) {
+                    result = element;
                 }
             }
-            result = array[indexMin];
-        } else result = Integer.MAX_VALUE;
+        }
         return result;
     }
 
     public int max(int[] array) {
-        int indexMax = 0, result;
+        int result = Integer.MIN_VALUE;
         if (array.length > 0) {
-            for (int i = 0; i < array.length; i++) {
-                if (array[i] > array[indexMax]) {
-                    indexMax = i;
+            for (int element : array) {
+                if (element > result) {
+                    result = element;
                 }
             }
-            result = array[indexMax];
-        } else result = Integer.MIN_VALUE;
+        }
         return result;
     }
 
     public double average(int[] array) {
-        double arraySum = 0, result;
+        double result = 0;
         if (array.length > 0) {
-            for (int i = 0; i < array.length; i++) {
-                arraySum += (double) array[i];
+            for (int element : array) {
+                result += (double) element;
             }
-            result = arraySum / (double) (array.length);
-        } else result = 0;
+            result = result / (double) (array.length);
+        }
         return result;
     }
 
@@ -120,26 +96,27 @@ public class FirstSteps {
     }
 
     public void cube(int[] array) {
-        int exp = 3;
         for (int i = 0; i < array.length; i++) {
-            array[i] = (int) Math.pow(array[i], exp);
+            array[i] = (int) Math.pow(array[i], 3);
         }
     }
 
     public boolean find(int[] array, int value) {
         boolean result = false;
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] == value) result = true;
+        for (int element : array) {
+            if (element == value) {
+                result = true;
+                break;
+            }
         }
         return result;
     }
 
     public void reverse(int[] array) {
-        int temp = 0, lastPos = array.length - 1;
         for (int i = 0; i < (array.length / 2); i++) {
-            temp = array[i];
-            array[i] = array[lastPos - i];
-            array[lastPos - i] = temp;
+            int temp = array[i];
+            array[i] = array[array.length - 1 - i];
+            array[array.length - 1 - i] = temp;
         }
     }
 
@@ -148,6 +125,7 @@ public class FirstSteps {
         for (int i = 0; i < (array.length / 2); i++) {
             if (array[i] != array[array.length - 1 - i]) {
                 result = false;
+                break;
             }
         }
         return result;
@@ -164,44 +142,40 @@ public class FirstSteps {
     }
 
     public int max(int[][] matrix) {
-        int result = 0;
+        int result = Integer.MIN_VALUE;
         if (matrix.length > 1) {
             for (int i = 0; i < (matrix.length); i++) {
                 for (int j = 0; j < (matrix[i].length); j++) {
-                    if (result < matrix[i][j]) {
+                    if (matrix[i][j] > result) {
                         result = matrix[i][j];
                     }
                 }
             }
-        } else result = Integer.MIN_VALUE;
+        }
         return result;
     }
 
     public int diagonalMax(int[][] matrix) {
-        int result = 0;
-        if (matrix.length > 1) {
-            for (int i = 0; i < (matrix.length); i++) {
-                for (int j = 0; j < (matrix[i].length); j++) {
-                    if (i == j) {
-                        result = matrix[i][j];
-                    }
+        int result = Integer.MIN_VALUE;
+        if (matrix.length > 0) {
+            for (int i = 0; i < matrix.length; i++) {
+                if (matrix[i][i] > result) {
+                    result = matrix[i][i];
                 }
             }
-        } else result = Integer.MIN_VALUE;
+        }
         return result;
     }
 
     public boolean isSortedDescendant(int[][] matrix) {
         boolean result = true;
         for (int i = 0; i < (matrix.length); i++) {
-            if (isSortedDescendant(matrix[i]) == false) {
+            if (!isSortedDescendant(matrix[i])) {
                 result = false;
                 break;
             }
         }
         return result;
     }
-
-
 }
 

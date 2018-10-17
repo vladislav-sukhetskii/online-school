@@ -3,9 +3,7 @@ package net.thumbtack.school.windows.v2;
 import java.util.Objects;
 
 public class Desktop {
-    private int desktopWidth;
-    private int desktopHeight;
-    private String desktopText;
+    private int desktopWidth,desktopHeight;
 
     public Desktop(int width, int height) {
         desktopWidth = width;
@@ -13,8 +11,7 @@ public class Desktop {
     }
 
     public Desktop() {
-        desktopWidth = 640;
-        desktopHeight = 480;
+        this(640,480);
     }
 
     public int getWidth() {
@@ -41,14 +38,6 @@ public class Desktop {
     @Override
     public int hashCode() {
         return Objects.hash(desktopWidth, desktopHeight);
-    }
-
-    public String getText(){
-        return desktopText;
-    }
-
-    public void setText(String text){
-        desktopText = text;
     }
 }
 

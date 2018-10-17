@@ -3,6 +3,7 @@ package net.thumbtack.school.windows.v2;
 import java.util.Objects;
 
 public class RoundButton {
+
     private Point buttonCenter;
     private int buttonRadius;
     private boolean buttonIsActive;
@@ -16,24 +17,15 @@ public class RoundButton {
     }
 
     public RoundButton(int xCenter, int yCenter, int radius, boolean active, String text) {
-        buttonCenter = new Point(xCenter, yCenter);
-        buttonRadius = radius;
-        buttonIsActive = active;
-        buttonText = text;
+        this(new Point(xCenter, yCenter), radius, active, text);
     }
 
     public RoundButton(Point center, int radius, String text) {
-        buttonCenter = center;
-        buttonRadius = radius;
-        buttonIsActive = true;
-        buttonText = text;
+        this(center, radius, true, text);
     }
 
     public RoundButton(int xCenter, int yCenter, int radius, String text) {
-        buttonCenter = new Point(xCenter, yCenter);
-        buttonRadius = radius;
-        buttonIsActive = true;
-        buttonText = text;
+        this(xCenter, yCenter, radius, true, text);
     }
 
     public Point getCenter() {
@@ -54,12 +46,11 @@ public class RoundButton {
     }
 
     public void moveTo(Point point) {
-        buttonCenter = point;
+        this.moveTo(point.getX(), point.getY());
     }
 
     public void setCenter(int x, int y) {
-        buttonCenter.setX(x);
-        buttonCenter.setY(y);
+        buttonCenter = new Point(x, y);
     }
 
     public void setRadius(int radius) {
@@ -71,8 +62,7 @@ public class RoundButton {
     }
 
     public void moveRel(int dx, int dy) {
-        buttonCenter.setX(buttonCenter.getX() + dx);
-        buttonCenter.setY(buttonCenter.getY() + dy);
+        this.moveTo(buttonCenter.getX() + dx, buttonCenter.getY() + dy);
     }
 
     public void resize(double ratio) {
@@ -84,7 +74,7 @@ public class RoundButton {
     }
 
     public boolean isInside(Point point) {
-        return buttonRadius >= Math.sqrt((double) (Math.pow((Math.abs(buttonCenter.getX() - point.getX())), 2)) + Math.pow((Math.abs(buttonCenter.getY() - point.getY())), 2));
+        return buttonRadius >= Math.sqrt((Math.pow((Math.abs(buttonCenter.getX() - point.getX())), 2)) + Math.pow((Math.abs(buttonCenter.getY() - point.getY())), 2));
     }
 
     public boolean isFullyVisibleOnDesktop(Desktop desktop) {
@@ -103,11 +93,11 @@ public class RoundButton {
         return result;
     }
 
-    public String getText() {
+    public String getText(){
         return buttonText;
     }
 
-    public void setText(String text) {
+    public void setText(String text){
         buttonText = text;
     }
 

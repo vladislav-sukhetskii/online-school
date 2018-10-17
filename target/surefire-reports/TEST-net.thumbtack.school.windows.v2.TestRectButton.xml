@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="16" failures="0" name="net.thumbtack.school.windows.v2.TestRectButton" time="0" errors="0" skipped="0">
+<testsuite tests="16" failures="0" name="net.thumbtack.school.windows.v2.TestRectButton" time="0.001" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2018.2.3"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -69,7 +69,7 @@
   <testcase classname="net.thumbtack.school.windows.v2.TestRectButton" name="testResizeRectButton" time="0"/>
   <testcase classname="net.thumbtack.school.windows.v2.TestRectButton" name="testMoveRelRectButton" time="0"/>
   <testcase classname="net.thumbtack.school.windows.v2.TestRectButton" name="testRectButtonsAreEqual" time="0"/>
-  <testcase classname="net.thumbtack.school.windows.v2.TestRectButton" name="testIsRectButtonInsideRectButton" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v2.TestRectButton" name="testIsRectButtonInsideRectButton" time="0.001"/>
   <testcase classname="net.thumbtack.school.windows.v2.TestRectButton" name="testIsIntersectsRectButton" time="0"/>
   <testcase classname="net.thumbtack.school.windows.v2.TestRectButton" name="testIsFullyVisibleOnDesktop" time="0"/>
   <testcase classname="net.thumbtack.school.windows.v2.TestRectButton" name="testRectButton1" time="0"/>

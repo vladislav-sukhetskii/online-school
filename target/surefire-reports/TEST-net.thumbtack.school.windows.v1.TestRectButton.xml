@@ -70,9 +70,9 @@
   <testcase classname="net.thumbtack.school.windows.v1.TestRectButton" name="testMoveRelRectButton" time="0"/>
   <testcase classname="net.thumbtack.school.windows.v1.TestRectButton" name="testRectButtonsAreEqual" time="0"/>
   <testcase classname="net.thumbtack.school.windows.v1.TestRectButton" name="testIsRectButtonInsideRectButton" time="0"/>
-  <testcase classname="net.thumbtack.school.windows.v1.TestRectButton" name="testIsIntersectsRectButton" time="0.001"/>
+  <testcase classname="net.thumbtack.school.windows.v1.TestRectButton" name="testIsIntersectsRectButton" time="0"/>
   <testcase classname="net.thumbtack.school.windows.v1.TestRectButton" name="testIsFullyVisibleOnDesktop" time="0"/>
-  <testcase classname="net.thumbtack.school.windows.v1.TestRectButton" name="testRectButton1" time="0"/>
+  <testcase classname="net.thumbtack.school.windows.v1.TestRectButton" name="testRectButton1" time="0.001"/>
   <testcase classname="net.thumbtack.school.windows.v1.TestRectButton" name="testRectButton2" time="0"/>
   <testcase classname="net.thumbtack.school.windows.v1.TestRectButton" name="testRectButton3" time="0"/>
   <testcase classname="net.thumbtack.school.windows.v1.TestRectButton" name="testRectButton4" time="0"/>
