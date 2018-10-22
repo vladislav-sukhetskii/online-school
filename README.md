@@ -1,2 +1,5 @@
-# online-school
-Thumbtack-online-school
+Заочная Школа разработчика  - осень 2018  
+
+Владислав Сухецкий  
+395337@gmail.com  
+Москва/Омск

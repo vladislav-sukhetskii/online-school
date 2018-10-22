@@ -2,6 +2,7 @@ package net.thumbtack.school.base;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
+import java.math.MathContext;
 
 public class NumberOperations {
     public static Integer find(int[] array, int value) {
@@ -48,7 +49,7 @@ public class NumberOperations {
 
     public static BigDecimal calculateDensity(BigDecimal weight, BigDecimal volume, BigDecimal min, BigDecimal max) {
         BigDecimal result = null;
-        BigDecimal density = weight.divide(volume);
+        BigDecimal density = weight.divide(volume,1,1);
         if (density.compareTo(min) > 0 && density.compareTo(max) < 0) {
             result = density;
         }
