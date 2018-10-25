@@ -2,22 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f9284ac-a62c-4536-9336-6b8f5f06430a" name="Default Changelist" comment="Задание_5.Выполнено">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v3/ComboBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v3/Desktop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v3/ListBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v3/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v3/RadioButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v3/RectButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v3/RectButton3D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v3/RoundButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v3/WindowFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v3/base/RectWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v3/base/RoundWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v3/base/Window.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v3/cursors/Cursor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v3/iface/Movable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v3/iface/Resizable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-net.thumbtack.school.base.TestNumberOperations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-net.thumbtack.school.base.TestStringOperations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-net.thumbtack.school.introduction.TestFirstSteps.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-net.thumbtack.school.windows.v1.TestDesktop.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-net.thumbtack.school.windows.v1.TestPoint.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-net.thumbtack.school.windows.v1.TestRectButton.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-net.thumbtack.school.windows.v1.TestRoundButton.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-net.thumbtack.school.windows.v1.TestWindowFactory.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-net.thumbtack.school.windows.v2.TestDesktop.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-net.thumbtack.school.windows.v2.TestListBox.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-net.thumbtack.school.windows.v2.TestPoint.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-net.thumbtack.school.windows.v2.TestRectButton.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-net.thumbtack.school.windows.v2.TestRoundButton.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-net.thumbtack.school.windows.v2.TestWindowFactory.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/net.thumbtack.school.base.TestNumberOperations.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/net.thumbtack.school.base.TestStringOperations.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/net.thumbtack.school.introduction.TestFirstSteps.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/net.thumbtack.school.windows.v1.TestDesktop.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/net.thumbtack.school.windows.v1.TestPoint.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/net.thumbtack.school.windows.v1.TestRectButton.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/net.thumbtack.school.windows.v1.TestRoundButton.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/net.thumbtack.school.windows.v1.TestWindowFactory.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/net.thumbtack.school.windows.v2.TestDesktop.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/net.thumbtack.school.windows.v2.TestListBox.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/net.thumbtack.school.windows.v2.TestPoint.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/net.thumbtack.school.windows.v2.TestRectButton.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/net.thumbtack.school.windows.v2.TestRoundButton.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/net.thumbtack.school.windows.v2.TestWindowFactory.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -118,6 +142,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="2" />
+          <entry key="gitignore" value="3" />
           <entry key="java" value="100" />
         </counts>
       </usages-collector>
@@ -125,10 +150,12 @@
         <counts>
           <entry key="CLASS" value="2" />
           <entry key="JAVA" value="100" />
+          <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="gitignore" value="45" />
           <entry key="java" value="1081" />
           <entry key="txt" value="31" />
         </counts>
@@ -136,7 +163,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="1081" />
-          <entry key="PLAIN_TEXT" value="31" />
+          <entry key="PLAIN_TEXT" value="76" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.mvc.usages" />
@@ -149,7 +176,17 @@
     <favorites_list name="lessons" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -181,7 +218,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v2/TestListBox.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sun/istack/internal/NotNull.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v2/RadioButton.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v2/TestRadioButton.java" />
@@ -232,6 +268,7 @@
         <option value="$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v3/base/Window.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v3/TestTypes.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v3/TestCursor.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -283,62 +320,6 @@
               <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
               <item name="online-school" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
-              <item name="online-school" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
-              <item name="online-school" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
-              <item name="online-school" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
-              <item name="online-school" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="school" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
-              <item name="online-school" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
-              <item name="online-school" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
-              <item name="online-school" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="school" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
-              <item name="online-school" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="school" type="462c0819:PsiDirectoryNode" />
-              <item name="windows" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -349,7 +330,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540487374614" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540487873992" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -474,7 +455,7 @@
       <option name="presentableId" value="Default" />
       <updated>1537195914626</updated>
       <workItem from="1540232846317" duration="275000" />
-      <workItem from="1540233162646" duration="17351000" />
+      <workItem from="1540233162646" duration="18396000" />
     </task>
     <task id="LOCAL-00001" summary="Task3.(&quot;не проверять&quot;)">
       <created>1538763080311</created>
@@ -490,7 +471,28 @@
       <option name="project" value="LOCAL" />
       <updated>1539697825896</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Задание_5.Выполнено">
+      <created>1540487235020</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1540487235020</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Задание_5.Выполнено">
+      <created>1540487301412</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1540487301412</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Задание_5.Выполнено">
+      <created>1540487406475</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1540487406475</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -526,7 +528,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17626000" />
+    <option name="totallyTimeSpent" value="18671000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -540,7 +542,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.60737526" visible="true" weight="0.26967096" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.60737526" visible="true" weight="0.26967096" />
       <window_info id="Structure" order="1" sideWeight="0.39262474" side_tool="true" weight="0.30597016" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -550,7 +552,7 @@
       <window_info id="Learn" order="7" weight="0.3297568" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39858156" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -621,13 +623,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v2/RoundButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v2/TestRectButton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1496">
@@ -1079,6 +1074,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
         </state>
       </provider>
     </entry>
