@@ -17,13 +17,11 @@ public class RectButton3D extends RectButton {
     }
 
     public RectButton3D(Point topLeft, Point bottomRight, String text, int zHeight) {
-        super(topLeft, bottomRight, text);
-        this.zHeight = zHeight;
+        this(topLeft, bottomRight, true, text, zHeight);
     }
 
     public RectButton3D(int xLeft, int yTop, int width, int height, String text, int zHeight) {
-        super(xLeft, yTop, width, height, text);
-        this.zHeight = zHeight;
+        this(xLeft, yTop, width, height, true, text, zHeight);
     }
 
     public int getZHeight() {
@@ -35,7 +33,7 @@ public class RectButton3D extends RectButton {
     }
 
     public boolean isInside(RectButton3D rectButton3D) {
-        return (this.isInside((RectButton)rectButton3D) && this.zHeight >= rectButton3D.zHeight);
+        return (this.isInside((RectButton) rectButton3D) && this.zHeight >= rectButton3D.zHeight);
     }
 
     @Override
