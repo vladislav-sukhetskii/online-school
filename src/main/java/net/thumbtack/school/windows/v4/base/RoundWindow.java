@@ -16,7 +16,7 @@ abstract public class RoundWindow extends Window {
         this.radius = radius;
     }
 
-    public RoundWindow(Point center, int radius, String windowState) {
+    public RoundWindow(Point center, int radius, String windowState) throws WindowException {
         super(windowState);
         this.center = center;
         this.radius = radius;

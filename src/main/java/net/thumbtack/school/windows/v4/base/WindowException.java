@@ -5,7 +5,7 @@ public class WindowException extends Exception {
     WindowErrorCode windowErrorCode;
 
     public WindowException(WindowErrorCode windowErrorCode){
-        super(windowErrorCode.getErrorString());
+        this.windowErrorCode = windowErrorCode;
 
     };
 

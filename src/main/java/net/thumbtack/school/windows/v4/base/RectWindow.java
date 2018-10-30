@@ -9,13 +9,13 @@ abstract public class RectWindow extends Window {
 
     private Point topLeft, bottomRight;
 
-    public RectWindow(Point topLeft, Point bottomRight, WindowState windowState) {
+    public RectWindow(Point topLeft, Point bottomRight, WindowState windowState) throws WindowException {
         super(windowState);
         this.topLeft = topLeft;
         this.bottomRight = bottomRight;
     }
 
-    public RectWindow(Point topLeft, Point bottomRight, String windowState) {
+    public RectWindow(Point topLeft, Point bottomRight, String windowState) throws WindowException {
         super(windowState);
         this.topLeft = topLeft;
         this.bottomRight = bottomRight;

@@ -1,7 +1,6 @@
 package net.thumbtack.school.windows.v4.cursors;
 
 import net.thumbtack.school.windows.v4.Point;
-import net.thumbtack.school.windows.v4.base.CursorForm;
 import net.thumbtack.school.windows.v4.iface.Movable;
 
 public class Cursor implements Movable {

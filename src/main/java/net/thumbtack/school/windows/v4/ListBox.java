@@ -2,15 +2,18 @@ package net.thumbtack.school.windows.v4;
 
 import net.thumbtack.school.base.StringOperations;
 import net.thumbtack.school.windows.v4.base.RectWindow;
+import net.thumbtack.school.windows.v4.base.WindowErrorCode;
+import net.thumbtack.school.windows.v4.base.WindowException;
 import net.thumbtack.school.windows.v4.base.WindowState;
 
 import java.util.Arrays;
+import java.util.Queue;
 
 public class ListBox extends RectWindow {
 
     private String[] lines;
 
-    public ListBox(Point topLeft, Point bottomRight, WindowState windowState, String[] lines) {
+    public ListBox(Point topLeft, Point bottomRight, WindowState windowState, String[] lines) throws WindowException {
         super(topLeft, bottomRight, windowState);
         if (lines != null) {
             this.lines = new String[lines.length];
@@ -18,7 +21,7 @@ public class ListBox extends RectWindow {
         } else this.lines = null;
     }
 
-    public ListBox(Point topLeft, Point bottomRight, String windowState, String[] lines) {
+    public ListBox(Point topLeft, Point bottomRight, String windowState, String[] lines) throws WindowException {
         super(topLeft, bottomRight, windowState);
         if (lines != null) {
             this.lines = new String[lines.length];
@@ -26,19 +29,19 @@ public class ListBox extends RectWindow {
         } else this.lines = null;
     }
 
-    public ListBox(int xLeft, int yTop, int width, int height, WindowState windowState, String[] lines) {
+    public ListBox(int xLeft, int yTop, int width, int height, WindowState windowState, String[] lines) throws WindowException {
         this(new Point(xLeft, yTop), new Point(xLeft + width - 1, yTop + height - 1), windowState, lines);
     }
 
-    public ListBox(int xLeft, int yTop, int width, int height, String windowState, String[] lines) {
+    public ListBox(int xLeft, int yTop, int width, int height, String windowState, String[] lines) throws WindowException {
         this(new Point(xLeft, yTop), new Point(xLeft + width - 1, yTop + height - 1), windowState, lines);
     }
 
-    public ListBox(Point topLeft, Point bottomRight, String[] lines) {
+    public ListBox(Point topLeft, Point bottomRight, String[] lines) throws WindowException {
         this(topLeft, bottomRight, WindowState.ACTIVE, lines);
     }
 
-    public ListBox(int xLeft, int yTop, int width, int height, String[] lines) {
+    public ListBox(int xLeft, int yTop, int width, int height, String[] lines) throws WindowException {
         this(xLeft, yTop, width, height, WindowState.ACTIVE, lines);
     }
 
@@ -52,33 +55,38 @@ public class ListBox extends RectWindow {
         } else this.lines = null;
     }
 
-    public String[] getLinesSlice(int from, int to) {
+    public String[] getLinesSlice(int from, int to) throws WindowException {
+        if (lines == null) throw new WindowException(WindowErrorCode.EMPTY_ARRAY);
+        if (from < 0 || to > lines.length || from > to - 1) throw new WindowException(WindowErrorCode.WRONG_INDEX);
+            /*int newListLength = (to <= lines.length) ? to - from : lines.length;
+            int end = (to < lines.length) ? (to) : lines.length;*/
         int j = 0;
-        String[] result = null;
-        if (lines != null) {
-            int newListLength = (to <= lines.length) ? to - from : lines.length;
-            int end = (to < lines.length) ? (to) : lines.length;
-            result = new String[newListLength];
-            for (int i = from; i < end; i++) {
-                result[j] = lines[i];
-                j++;
-            }
+        String[] result = new String[to - from];
+        for (int i = from; i < to; i++) {
+            result[j] = lines[i];
+            j++;
         }
         return result;
     }
 
-    public String getLine(int index) {
-        String result = null;
-        if (index < lines.length) {
-            result = lines[index];
-        }
-        return result;
+    public String getLine(int index) throws WindowException {
+        checkIndex(index);
+        return lines[index];
     }
 
-    public void setLine(int index, String line) {
-        if (index < lines.length) {
-            lines[index] = line;
-        }
+   /* private void checkGetLine(int index) throws WindowException {
+        if (lines == null) throw new WindowException(WindowErrorCode.EMPTY_ARRAY);
+        if (index > lines.length - 1) throw new WindowException(WindowErrorCode.WRONG_INDEX);
+    }*/
+
+    public void setLine(int index, String line) throws WindowException {
+        checkIndex(index);
+        lines[index] = line;
+    }
+
+    private void checkIndex(int index) throws WindowException {
+        if (lines == null) throw new WindowException(WindowErrorCode.EMPTY_ARRAY);
+        if (index > lines.length - 1) throw new WindowException(WindowErrorCode.WRONG_INDEX);
     }
 
     public Integer findLine(String line) {

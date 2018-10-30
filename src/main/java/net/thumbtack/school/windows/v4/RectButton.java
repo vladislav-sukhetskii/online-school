@@ -10,29 +10,29 @@ public class RectButton extends RectWindow {
 
     private String buttonText;
 
-    public RectButton(Point topLeft, Point bottomRight, WindowState windowState, String text) {
+    public RectButton(Point topLeft, Point bottomRight, WindowState windowState, String text) throws WindowException {
         super(topLeft, bottomRight, windowState);
         buttonText = text;
     }
 
-    public RectButton(Point topLeft, Point bottomRight, String windowState, String text) {
+    public RectButton(Point topLeft, Point bottomRight, String windowState, String text) throws WindowException {
         super(topLeft, bottomRight, windowState);
         buttonText = text;
     }
 
-    public RectButton(int xLeft, int yTop, int width, int height, WindowState windowState, String text) {
+    public RectButton(int xLeft, int yTop, int width, int height, WindowState windowState, String text) throws WindowException {
         this(new Point(xLeft, yTop), new Point(xLeft + width - 1, yTop + height - 1), windowState, text);
     }
 
-    public RectButton(int xLeft, int yTop, int width, int height, String windowState, String text) {
+    public RectButton(int xLeft, int yTop, int width, int height, String windowState, String text) throws WindowException {
         this(new Point(xLeft, yTop), new Point(xLeft + width - 1, yTop + height - 1), windowState, text);
     }
 
-    public RectButton(Point topLeft, Point bottomRight, String text) {
+    public RectButton(Point topLeft, Point bottomRight, String text) throws WindowException {
         this(topLeft, bottomRight, WindowState.ACTIVE, text);
     }
 
-    public RectButton(int xLeft, int yTop, int width, int height, String text) {
+    public RectButton(int xLeft, int yTop, int width, int height, String text) throws WindowException {
         this(xLeft, yTop, width, height, WindowState.ACTIVE, text);
     }
 

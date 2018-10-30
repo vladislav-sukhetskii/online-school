@@ -30,12 +30,12 @@ abstract public class Window implements Movable, Resizable {
     }
 
     private void checkState(WindowState windowState) throws WindowException {
-        if (windowState == null || this.windowState == WindowState.DESTROYED)
+        if (windowState == null)
             throw new WindowException(WindowErrorCode.WRONG_STATE);
     }
 
     private void checkState(String windowState) throws WindowException {
-        if (windowState == null || this.windowState == WindowState.DESTROYED)
+        if (windowState == null)
             throw new WindowException(WindowErrorCode.WRONG_STATE);
     }
 

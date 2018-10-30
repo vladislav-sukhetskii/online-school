@@ -1,30 +1,31 @@
 package net.thumbtack.school.windows.v4;
 
+import net.thumbtack.school.windows.v4.base.WindowException;
 import net.thumbtack.school.windows.v4.base.WindowState;
 
 public class WindowFactory {
     private static int rectCount = 0;
     private static int roundCount = 0;
 
-    public static RectButton createRectButton(Point leftTop, Point rightBottom, WindowState windowState, String text) {
+    public static RectButton createRectButton(Point leftTop, Point rightBottom, WindowState windowState, String text) throws WindowException {
         RectButton newRectButton = new RectButton(leftTop, rightBottom, windowState, text);
         rectCount++;
         return newRectButton;
     }
 
-    public static RectButton createRectButton(Point leftTop, Point rightBottom, String windowState, String text) {
+    public static RectButton createRectButton(Point leftTop, Point rightBottom, String windowState, String text) throws WindowException {
         RectButton newRectButton = new RectButton(leftTop, rightBottom, windowState, text);
         rectCount++;
         return newRectButton;
     }
 
-    public static RoundButton createRoundButton(Point center, int radius, WindowState windowState, String text) {
+    public static RoundButton createRoundButton(Point center, int radius, WindowState windowState, String text) throws WindowException {
         RoundButton newRoundButton = new RoundButton(center, radius, windowState, text);
         roundCount++;
         return newRoundButton;
     }
 
-    public static RoundButton createRoundButton(Point center, int radius, String windowState, String text) {
+    public static RoundButton createRoundButton(Point center, int radius, String windowState, String text) throws WindowException {
         RoundButton newRoundButton = new RoundButton(center, radius, windowState, text);
         roundCount++;
         return newRoundButton;

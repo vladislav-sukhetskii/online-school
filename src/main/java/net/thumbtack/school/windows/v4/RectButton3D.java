@@ -1,5 +1,6 @@
 package net.thumbtack.school.windows.v4;
 
+import net.thumbtack.school.windows.v4.base.WindowException;
 import net.thumbtack.school.windows.v4.base.WindowState;
 
 import java.util.Objects;
@@ -8,31 +9,31 @@ public class RectButton3D extends RectButton {
 
     private int zHeight;
 
-    public RectButton3D(Point topLeft, Point bottomRight, WindowState windowState, String text, int zHeight) {
+    public RectButton3D(Point topLeft, Point bottomRight, WindowState windowState, String text, int zHeight) throws WindowException {
         super(topLeft, bottomRight, windowState, text);
         this.zHeight = zHeight;
     }
 
-    public RectButton3D(Point topLeft, Point bottomRight, String windowState, String text, int zHeight) {
+    public RectButton3D(Point topLeft, Point bottomRight, String windowState, String text, int zHeight) throws WindowException {
         super(topLeft, bottomRight, windowState, text);
         this.zHeight = zHeight;
     }
 
-    public RectButton3D(int xLeft, int yTop, int width, int height, WindowState windowState, String text, int zHeight) {
+    public RectButton3D(int xLeft, int yTop, int width, int height, WindowState windowState, String text, int zHeight) throws WindowException {
         super(xLeft, yTop, width, height, windowState, text);
         this.zHeight = zHeight;
     }
 
-    public RectButton3D(int xLeft, int yTop, int width, int height, String windowState, String text, int zHeight) {
+    public RectButton3D(int xLeft, int yTop, int width, int height, String windowState, String text, int zHeight) throws WindowException {
         super(xLeft, yTop, width, height, windowState, text);
         this.zHeight = zHeight;
     }
 
-    public RectButton3D(Point topLeft, Point bottomRight, String text, int zHeight) {
+    public RectButton3D(Point topLeft, Point bottomRight, String text, int zHeight) throws WindowException {
         this(topLeft, bottomRight, WindowState.ACTIVE, text, zHeight);
     }
 
-    public RectButton3D(int xLeft, int yTop, int width, int height, String text, int zHeight) {
+    public RectButton3D(int xLeft, int yTop, int width, int height, String text, int zHeight) throws WindowException {
         this(xLeft, yTop, width, height, WindowState.ACTIVE, text, zHeight);
     }
 

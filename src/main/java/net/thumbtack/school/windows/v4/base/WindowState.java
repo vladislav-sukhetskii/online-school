@@ -4,6 +4,18 @@ public enum WindowState {
     ACTIVE, INACTIVE, DESTROYED;
 
     public static WindowState fromString(String stateString) throws WindowException {
-            return WindowState.valueOf(stateString);
+        checkStateString(stateString);
+        return WindowState.valueOf(stateString);
+    }
+
+    private static void checkStateString(String stateString) throws WindowException {
+        if (stateString == null) throw new WindowException(WindowErrorCode.WRONG_STATE);
+        for (WindowState element : WindowState.values()) {
+            if (element != WindowState.valueOf(stateString)) {
+                return;
+            }
+        }
+        throw new WindowException(WindowErrorCode.WRONG_STATE);
     }
 }
+
