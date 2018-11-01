@@ -5,6 +5,8 @@ import net.thumbtack.school.windows.v4.Point;
 import net.thumbtack.school.windows.v4.iface.Movable;
 import net.thumbtack.school.windows.v4.iface.Resizable;
 
+import java.util.Objects;
+
 abstract public class Window implements Movable, Resizable {
 
     private WindowState windowState;
@@ -30,15 +32,14 @@ abstract public class Window implements Movable, Resizable {
     }
 
     private void checkState(WindowState windowState) throws WindowException {
-        if (windowState == null)
+        if (windowState == null || (this.windowState == null && windowState == WindowState.DESTROYED) || this.windowState == WindowState.DESTROYED)
             throw new WindowException(WindowErrorCode.WRONG_STATE);
     }
 
     private void checkState(String windowState) throws WindowException {
-        if (windowState == null)
+        if (windowState == null || (this.windowState == null && windowState.equals("DESTROYED")) || this.windowState == WindowState.DESTROYED)
             throw new WindowException(WindowErrorCode.WRONG_STATE);
     }
-
 
     public WindowState getState() {
         return windowState;
@@ -50,4 +51,16 @@ abstract public class Window implements Movable, Resizable {
 
     abstract public boolean isFullyVisibleOnDesktop(Desktop desktop);
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Window window = (Window) o;
+        return windowState == window.windowState;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(windowState);
+    }
 }

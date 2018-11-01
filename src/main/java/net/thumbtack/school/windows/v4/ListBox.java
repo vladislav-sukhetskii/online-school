@@ -49,7 +49,7 @@ public class ListBox extends RectWindow {
         return lines;
     }
 
-    public void setLines(String[] lines) {
+    public void setLines(String[] lines) throws WindowException {
         if (lines != null) {
             System.arraycopy(lines, 0, this.lines, 0, lines.length);
         } else this.lines = null;
@@ -86,7 +86,7 @@ public class ListBox extends RectWindow {
 
     private void checkIndex(int index) throws WindowException {
         if (lines == null) throw new WindowException(WindowErrorCode.EMPTY_ARRAY);
-        if (index > lines.length - 1) throw new WindowException(WindowErrorCode.WRONG_INDEX);
+        if (index > lines.length - 1 || index < 0) throw new WindowException(WindowErrorCode.WRONG_INDEX);
     }
 
     public Integer findLine(String line) {

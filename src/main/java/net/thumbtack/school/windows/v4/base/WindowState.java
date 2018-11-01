@@ -10,12 +10,13 @@ public enum WindowState {
 
     private static void checkStateString(String stateString) throws WindowException {
         if (stateString == null) throw new WindowException(WindowErrorCode.WRONG_STATE);
+        boolean stateStringNotMatch = true;
         for (WindowState element : WindowState.values()) {
-            if (element != WindowState.valueOf(stateString)) {
-                return;
+            if (element.toString().equals(stateString)) {
+                stateStringNotMatch = false;
             }
         }
-        throw new WindowException(WindowErrorCode.WRONG_STATE);
+        if (stateStringNotMatch)throw new WindowException(WindowErrorCode.WRONG_STATE);
     }
 }
 

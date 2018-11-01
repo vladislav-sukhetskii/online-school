@@ -45,7 +45,7 @@ public class ComboBox extends ListBox {
     private void checkSelected(String[] lines, Integer selected) throws WindowException {
         if (lines == null && selected != null)
             throw new WindowException(WindowErrorCode.EMPTY_ARRAY);
-        if (selected != null && (selected > lines.length || selected < 0))
+        if (selected != null && (selected > lines.length - 1 || selected < 0))
             throw new WindowException(WindowErrorCode.WRONG_INDEX);
     }
 
@@ -59,7 +59,13 @@ public class ComboBox extends ListBox {
     }
 
     private void checkSetSelected(Integer selected) throws WindowException {
+        if (selected == null) return;
         if (selected > getLines().length - 1 || selected < 0) throw new WindowException(WindowErrorCode.WRONG_INDEX);
+    }
+
+    public void setLines(String[] lines) throws WindowException {
+        super.setLines(lines);
+        this.setSelected(null);
     }
 
     @Override
