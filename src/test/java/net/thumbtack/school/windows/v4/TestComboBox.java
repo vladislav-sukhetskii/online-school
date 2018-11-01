@@ -399,7 +399,7 @@ public class TestComboBox {
             comboBox1.getLinesSlice(-1, 3);
             failed = true;
         } catch (WindowException ex) {
-            assertEquals(WindowErrorCode.WRONG_INDEX, ex.getWindowErrorCode());
+            assertEquals("Error in array`s index", ex.getWindowErrorCode().getErrorString());
         }
         try {
             comboBox1.getLinesSlice(0, 0);

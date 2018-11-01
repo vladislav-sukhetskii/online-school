@@ -67,7 +67,7 @@ abstract public class RectWindow extends Window {
                 Objects.equals(bottomRight, that.bottomRight);
     }
 
-    @Override
+   @Override
     public int hashCode() {
         return Objects.hash(super.hashCode(), topLeft, bottomRight);
     }
