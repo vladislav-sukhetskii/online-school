@@ -36,19 +36,6 @@ public class RoundButton extends RoundWindow {
         this(xCenter, yCenter, radius, WindowState.ACTIVE, text);
     }
 
-    public void moveTo(int x, int y) {
-        getCenter().setX(x);
-        getCenter().setY(y);
-    }
-
-    public void moveRel(int dx, int dy) {
-        this.moveTo(getCenter().getX() + dx, getCenter().getY() + dy);
-    }
-
-    public void resize(double ratio) {
-        setRadius(((getRadius() * ratio) < 1) ? 1 : (int) (getRadius() * ratio));
-    }
-
     public String getText() {
         return text;
     }

@@ -7,7 +7,6 @@ import net.thumbtack.school.windows.v4.base.WindowException;
 import net.thumbtack.school.windows.v4.base.WindowState;
 
 import java.util.Arrays;
-import java.util.Queue;
 
 public class ListBox extends RectWindow {
 
@@ -58,8 +57,6 @@ public class ListBox extends RectWindow {
     public String[] getLinesSlice(int from, int to) throws WindowException {
         if (lines == null) throw new WindowException(WindowErrorCode.EMPTY_ARRAY);
         if (from < 0 || to > lines.length || from > to - 1) throw new WindowException(WindowErrorCode.WRONG_INDEX);
-            /*int newListLength = (to <= lines.length) ? to - from : lines.length;
-            int end = (to < lines.length) ? (to) : lines.length;*/
         int j = 0;
         String[] result = new String[to - from];
         for (int i = from; i < to; i++) {
@@ -73,11 +70,6 @@ public class ListBox extends RectWindow {
         checkIndex(index);
         return lines[index];
     }
-
-   /* private void checkGetLine(int index) throws WindowException {
-        if (lines == null) throw new WindowException(WindowErrorCode.EMPTY_ARRAY);
-        if (index > lines.length - 1) throw new WindowException(WindowErrorCode.WRONG_INDEX);
-    }*/
 
     public void setLine(int index, String line) throws WindowException {
         checkIndex(index);
@@ -158,35 +150,6 @@ public class ListBox extends RectWindow {
             }
         }
         return result;
-    }
-
-    public void moveTo(int x, int y) {
-        getBottomRight().setX(getBottomRight().getX() + x - getTopLeft().getX());
-        getBottomRight().setY(getBottomRight().getY() + y - getTopLeft().getY());
-        getTopLeft().setX(x);
-        getTopLeft().setY(y);
-    }
-
-    public void moveRel(int dx, int dy) {
-        this.moveTo(getTopLeft().getX() + dx, getTopLeft().getY() + dy);
-    }
-
-    public void resize(double ratio) {
-        getBottomRight().setX(getTopLeft().getX() + (((getWidth() * ratio) < 1) ? 1 : (int) (getWidth() * ratio)) - 1);
-        getBottomRight().setY(getTopLeft().getY() + (((getHeight() * ratio) < 1) ? 1 : (int) (getHeight() * ratio)) - 1);
-    }
-
-    public boolean isIntersects(ListBox listBox) {
-        boolean result = false;
-        if (!(listBox.getTopLeft().getY() > getBottomRight().getY() || listBox.getTopLeft().getX() > getBottomRight().getX() || listBox.getBottomRight().getY() < getTopLeft().getY() || listBox.getBottomRight().getX() < getTopLeft().getX())) {
-            result = true;
-        }
-        return result;
-
-    }
-
-    public boolean isInside(ListBox listBox) {
-        return isInside(listBox.getTopLeft()) && isInside(listBox.getBottomRight());
     }
 
     @Override

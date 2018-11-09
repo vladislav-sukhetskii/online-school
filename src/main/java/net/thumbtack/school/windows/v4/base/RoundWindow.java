@@ -62,6 +62,19 @@ abstract public class RoundWindow extends Window {
         return getRadius() >= Math.sqrt((Math.pow((Math.abs(center.getX() - point.getX())), 2)) + Math.pow((Math.abs(center.getY() - point.getY())), 2));
     }
 
+    public void moveTo(int x, int y) {
+        center.setX(x);
+        center.setY(y);
+    }
+
+    public void moveRel(int dx, int dy) {
+        this.moveTo(center.getX() + dx, center.getY() + dy);
+    }
+
+    public void resize(double ratio) {
+        setRadius(((radius * ratio) < 1) ? 1 : (int) (radius * ratio));
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

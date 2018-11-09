@@ -4,6 +4,7 @@ import net.thumbtack.school.windows.v4.base.RectWindow;
 import net.thumbtack.school.windows.v4.base.WindowException;
 import net.thumbtack.school.windows.v4.base.WindowState;
 
+import java.io.Serializable;
 import java.util.Objects;
 
 public class RectButton extends RectWindow {
@@ -34,34 +35,6 @@ public class RectButton extends RectWindow {
 
     public RectButton(int xLeft, int yTop, int width, int height, String text) throws WindowException {
         this(xLeft, yTop, width, height, WindowState.ACTIVE, text);
-    }
-
-    public void moveTo(int x, int y) {
-        getBottomRight().setX(getBottomRight().getX() + x - getTopLeft().getX());
-        getBottomRight().setY(getBottomRight().getY() + y - getTopLeft().getY());
-        getTopLeft().setX(x);
-        getTopLeft().setY(y);
-    }
-
-    public void moveRel(int dx, int dy) {
-        this.moveTo(getTopLeft().getX() + dx, getTopLeft().getY() + dy);
-    }
-
-    public void resize(double ratio) {
-        getBottomRight().setX(getTopLeft().getX() + (((getWidth() * ratio) < 1) ? 1 : (int) (getWidth() * ratio)) - 1);
-        getBottomRight().setY(getTopLeft().getY() + (((getHeight() * ratio) < 1) ? 1 : (int) (getHeight() * ratio)) - 1);
-    }
-
-    public boolean isIntersects(RectButton rectButton) {
-        boolean result = false;
-        if (!(rectButton.getTopLeft().getY() > getBottomRight().getY() || rectButton.getTopLeft().getX() > getBottomRight().getX() || rectButton.getBottomRight().getY() < getTopLeft().getY() || rectButton.getBottomRight().getX() < getTopLeft().getX())) {
-            result = true;
-        }
-        return result;
-    }
-
-    public boolean isInside(RectButton rectButton) {
-        return isInside(rectButton.getTopLeft()) && isInside(rectButton.getBottomRight());
     }
 
     public String getText() {

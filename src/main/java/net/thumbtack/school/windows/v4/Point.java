@@ -1,14 +1,15 @@
 package net.thumbtack.school.windows.v4;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Point {
+public class Point  {
 
-    private int xPoint,yPoint;
+    private int x,y;
 
     public Point(int x, int y) {
-        xPoint = x;
-        yPoint = y;
+        this.x = x;
+        this.y = y;
     }
 
     public Point() {
@@ -20,37 +21,37 @@ public class Point {
     }
 
     public int getX() {
-        return xPoint;
+        return x;
     }
 
     public int getY() {
-        return yPoint;
+        return y;
     }
 
     public void setX(int x) {
-        xPoint = x;
+        this.x = x;
     }
 
     public void setY(int y) {
-        yPoint = y;
+        this.y = y;
     }
 
     public void moveTo(int x, int y) {
-        xPoint = x;
-        yPoint = y;
+        this.x = x;
+        this.y = y;
     }
 
     public void moveRel(int dx, int dy) {
-        xPoint += dx;
-        yPoint += dy;
+        x += dx;
+        y += dy;
     }
 
     public boolean isVisibleOnDesktop(Desktop desktop) {
-        return xPoint < desktop.getWidth() && xPoint >= 0 && yPoint >= 0 && yPoint < desktop.getHeight();
+        return x < desktop.getWidth() && x >= 0 && y >= 0 && y < desktop.getHeight();
     }
 
     public boolean isNotVisibleOnDesktop(Desktop desktop) {
-        return xPoint >= desktop.getWidth() || xPoint < 0 || yPoint < 0 || yPoint >= desktop.getHeight();
+        return x >= desktop.getWidth() || x < 0 || y < 0 || y >= desktop.getHeight();
     }
 
     @Override
@@ -58,13 +59,13 @@ public class Point {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Point point = (Point) o;
-        return xPoint == point.xPoint &&
-                yPoint == point.yPoint;
+        return x == point.x &&
+                y == point.y;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(xPoint, yPoint);
+        return Objects.hash(x, y);
     }
 }
 

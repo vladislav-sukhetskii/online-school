@@ -14,6 +14,7 @@ public enum WindowState {
         for (WindowState element : WindowState.values()) {
             if (element.toString().equals(stateString)) {
                 stateStringNotMatch = false;
+                break;
             }
         }
         if (stateStringNotMatch)throw new WindowException(WindowErrorCode.WRONG_STATE);

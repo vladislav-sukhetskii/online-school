@@ -46,7 +46,7 @@ public class RectButton3D extends RectButton {
     }
 
     public boolean isInside(RectButton3D rectButton3D) {
-        return (this.isInside((RectButton) rectButton3D) && this.zHeight >= rectButton3D.zHeight);
+        return (this.isInside((RectButton)rectButton3D) && this.zHeight >= rectButton3D.zHeight);
     }
 
     @Override
