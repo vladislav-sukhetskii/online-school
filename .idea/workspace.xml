@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2f9284ac-a62c-4536-9336-6b8f5f06430a" name="Default Changelist" comment="Задание_5.Выполнено">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v4/base/RectWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v4/base/RectWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v4/TestComboBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v4/TestComboBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v4/TestWindowFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v4/TestWindowFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/file/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/file/FileService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,6 +15,9 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/lessons$net_thumbtack_school_in_lessons.ic" NAME="net.thumbtack.school in lessons Coverage Results" MODIFIED="1541064215708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>net.thumbtack.school.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/lessons$TestFileService.ic" NAME="TestFileService Coverage Results" MODIFIED="1542311445914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>net.thumbtack.school.file.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/lessons$TestPoint.ic" NAME="TestPoint Coverage Results" MODIFIED="1538401652534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>net.thumbtack.school.windows.v1.*</FILTER>
@@ -32,36 +33,36 @@
     <session id="1605654058">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="21" />
-          <entry key="project.open.time.0" value="6" />
+          <entry key="project.closed" value="23" />
+          <entry key="project.open.time.0" value="7" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="7" />
-          <entry key="project.open.time.5" value="7" />
+          <entry key="project.open.time.5" value="8" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="22" />
+          <entry key="project.opened" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="100" />
-          <entry key="java" value="262" />
+          <entry key="class" value="104" />
+          <entry key="java" value="276" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="100" />
-          <entry key="JAVA" value="262" />
+          <entry key="CLASS" value="104" />
+          <entry key="JAVA" value="276" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="15608" />
+          <entry key="java" value="16061" />
           <entry key="txt" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="15608" />
+          <entry key="JAVA" value="16061" />
           <entry key="PLAIN_TEXT" value="21" />
         </counts>
       </usages-collector>
@@ -145,7 +146,26 @@
     <favorites_list name="lessons" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/file/FileService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="503">
+              <caret line="182" selection-start-line="182" selection-end-line="182" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/net/thumbtack/school/file/TestFileService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="419">
+              <caret line="122" column="46" selection-start-line="122" selection-start-column="46" selection-end-line="122" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -182,8 +202,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/net/thumbtack/school/base/NumberOperations.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/thumbtack/school/base/StringOperations.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v3/Movable.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v3/TestDesktop.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v3/TestWindowFactory.java" />
@@ -233,6 +251,8 @@
         <option value="$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v4/RoundButton.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v4/TestWindowFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v4/TestComboBox.java" />
+        <option value="$PROJECT_DIR$/src/test/java/net/thumbtack/school/file/TestFileService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/thumbtack/school/file/FileService.java" />
       </list>
     </option>
   </component>
@@ -316,15 +336,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="school" type="462c0819:PsiDirectoryNode" />
-              <item name="introduction" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
-              <item name="online-school" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="school" type="462c0819:PsiDirectoryNode" />
               <item name="windows" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -341,17 +352,6 @@
               <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
               <item name="online-school" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="school" type="462c0819:PsiDirectoryNode" />
-              <item name="windows" type="462c0819:PsiDirectoryNode" />
-              <item name="v4" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
-              <item name="online-school" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -368,6 +368,15 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="school" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
+              <item name="online-school" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="school" type="462c0819:PsiDirectoryNode" />
+              <item name="file" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
@@ -392,15 +401,15 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541064214681" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542390314208" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -428,17 +437,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.net.thumbtack.school in lessons">
-    <configuration name="TestComboBox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestFileService">
+    <configuration name="TestFileService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lessons" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="net.thumbtack.school.windows.v4.*" />
+          <option name="PATTERN" value="net.thumbtack.school.file.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="net.thumbtack.school.windows.v3" />
-      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.windows.v3.TestComboBox" />
+      <option name="PACKAGE_NAME" value="net.thumbtack.school.file" />
+      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.file.TestFileService" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -500,19 +509,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.TestComboBox" />
       <item itemvalue="JUnit.TestRoundButton" />
       <item itemvalue="JUnit.net.thumbtack.school.windows.v3 in lessons" />
       <item itemvalue="JUnit.net.thumbtack.school.windows.v4 in lessons" />
       <item itemvalue="JUnit.net.thumbtack.school in lessons" />
+      <item itemvalue="JUnit.TestFileService" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestFileService" />
         <item itemvalue="JUnit.net.thumbtack.school in lessons" />
         <item itemvalue="JUnit.net.thumbtack.school.windows.v4 in lessons" />
         <item itemvalue="JUnit.net.thumbtack.school.windows.v3 in lessons" />
         <item itemvalue="JUnit.TestRoundButton" />
-        <item itemvalue="JUnit.TestComboBox" />
       </list>
     </recent_temporary>
   </component>
@@ -574,35 +583,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="net_thumbtack_school_in_lessons - 2018.11.01 at 12h 04m 49s.xml">
-      <configuration name="net.thumbtack.school in lessons" configurationId="JUnit" />
+    <history-entry file="TestFileService - 2018.11.16 at 18h 23m 05s.xml">
+      <configuration name="TestFileService" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="net_thumbtack_school_in_lessons - 2018.11.01 at 12h 10m 19s.xml">
-      <configuration name="net.thumbtack.school in lessons" configurationId="JUnit" />
+    <history-entry file="TestFileService - 2018.11.16 at 18h 38m 12s.xml">
+      <configuration name="TestFileService" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="net_thumbtack_school_in_lessons - 2018.11.01 at 12h 11m 24s.xml">
-      <configuration name="net.thumbtack.school in lessons" configurationId="JUnit" />
+    <history-entry file="TestFileService - 2018.11.16 at 18h 38m 56s.xml">
+      <configuration name="TestFileService" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="net_thumbtack_school_in_lessons - 2018.11.01 at 12h 11m 40s.xml">
-      <configuration name="net.thumbtack.school in lessons" configurationId="JUnit" />
+    <history-entry file="TestFileService - 2018.11.16 at 18h 45m 16s.xml">
+      <configuration name="TestFileService" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="net_thumbtack_school_in_lessons - 2018.11.01 at 12h 11m 49s.xml">
-      <configuration name="net.thumbtack.school in lessons" configurationId="JUnit" />
+    <history-entry file="TestFileService - 2018.11.16 at 18h 45m 36s.xml">
+      <configuration name="TestFileService" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="net_thumbtack_school_in_lessons - 2018.11.01 at 12h 15m 01s.xml">
-      <configuration name="net.thumbtack.school in lessons" configurationId="JUnit" />
+    <history-entry file="TestFileService - 2018.11.16 at 18h 52m 35s.xml">
+      <configuration name="TestFileService" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="net_thumbtack_school_in_lessons - 2018.11.01 at 12h 18m 01s.xml">
-      <configuration name="net.thumbtack.school in lessons" configurationId="JUnit" />
+    <history-entry file="TestFileService - 2018.11.16 at 19h 04m 44s.xml">
+      <configuration name="TestFileService" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="net_thumbtack_school_in_lessons - 2018.11.01 at 12h 18m 08s.xml">
-      <configuration name="net.thumbtack.school in lessons" configurationId="JUnit" />
+    <history-entry file="TestFileService - 2018.11.16 at 19h 04m 49s.xml">
+      <configuration name="TestFileService" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="net_thumbtack_school_in_lessons - 2018.11.01 at 12h 18m 27s.xml">
-      <configuration name="net.thumbtack.school in lessons" configurationId="JUnit" />
+    <history-entry file="TestFileService - 2018.11.16 at 19h 11m 30s.xml">
+      <configuration name="TestFileService" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="net_thumbtack_school_in_lessons - 2018.11.01 at 12h 23m 37s.xml">
-      <configuration name="net.thumbtack.school in lessons" configurationId="JUnit" />
+    <history-entry file="TestFileService - 2018.11.16 at 19h 12m 13s.xml">
+      <configuration name="TestFileService" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -620,7 +629,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.60737526" visible="true" weight="0.27025586" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.60737526" visible="true" weight="0.15565032" />
       <window_info id="Structure" order="1" sideWeight="0.39262474" side_tool="true" weight="0.30597016" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -631,7 +640,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.23644252" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39804772" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.19197397" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
@@ -647,7 +656,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" sideWeight="0.49457702" visible="true" weight="0.29211086" />
+      <window_info anchor="right" id="Maven Projects" order="7" sideWeight="0.49457702" weight="0.29211086" />
       <window_info anchor="right" id="Coverage" order="8" sideWeight="0.505423" side_tool="true" visible="true" weight="0.29211086" />
       <window_info anchor="right" id="Database" order="9" />
     </layout>
@@ -696,16 +705,32 @@
     <MESSAGE value="Задание_5.Выполнено" />
     <option name="LAST_COMMIT_MESSAGE" value="Задание_5.Выполнено" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/net/thumbtack/school/file/TestFileService.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>x</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v3/TestRadioButton.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v3/TestRectButton3D.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v3/TestRectWindow.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v3/TestRoundWindow.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v3/TestWindow.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v3/iface/Resizable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -771,7 +796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v4/iface/Movable.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v4/iface/Resizable.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v3/ComboBox.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -788,13 +812,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/introduction/FirstSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-47">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v3/ListBox.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1958">
@@ -806,7 +823,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v4/base/RoundWindow.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v4/RectButton.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v4/cursors/Cursor.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v4/TestCursor.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v4/cursors/CursorForm.java" />
@@ -827,13 +843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -845,18 +854,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v4/ListBox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="88" column="49" selection-start-line="88" selection-start-column="49" selection-end-line="88" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5990#5991#0" expanded="true" />
-            <element signature="e#6069#6070#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -910,9 +907,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -937,13 +931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v4/base/RectWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="69" column="3" selection-start-line="69" selection-start-column="3" selection-end-line="69" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/net/thumbtack/school/windows/v4/TestComboBox.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
@@ -962,6 +949,89 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/introduction/FirstSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2285">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v4/ListBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="88" column="31" lean-forward="true" selection-start-line="88" selection-start-column="31" selection-end-line="88" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v4/iface/Movable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v4/base/RectWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+          <folding>
+            <element signature="e#1938#1939#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v4/RectButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v4/managers/NamedManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v4/managers/PairManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/windows/v4/managers/ArrayManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/file/FileService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="182" selection-start-line="182" selection-end-line="182" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/thumbtack/school/file/TestFileService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="122" column="46" selection-start-line="122" selection-start-column="46" selection-end-line="122" selection-end-column="46" />
         </state>
       </provider>
     </entry>
