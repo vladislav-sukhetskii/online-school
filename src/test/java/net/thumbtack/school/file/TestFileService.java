@@ -115,7 +115,7 @@ public class TestFileService {
         }
         assertArrayEquals(rectButtons, rectsRead);
     }
-/*
+
     @Test
     public void testFileReadWriteRectButtonTextOneLine() throws WindowException, IOException {
         RectButton rectButton = new RectButton(10000, 10000, 20000, 20000, "OK");
@@ -210,6 +210,6 @@ public class TestFileService {
                 fail();
             }
         }
-    }*/
+    }
 
 }
