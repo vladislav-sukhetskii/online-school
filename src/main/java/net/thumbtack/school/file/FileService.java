@@ -1,7 +1,6 @@
 package net.thumbtack.school.file;
 
 import com.google.gson.Gson;
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
 import net.thumbtack.school.ttschool.Trainee;
 import net.thumbtack.school.ttschool.TrainingException;
 import net.thumbtack.school.windows.v4.Point;
@@ -14,14 +13,9 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
-
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
 import java.io.*;
 import java.util.StringJoiner;
 
@@ -58,7 +52,7 @@ public class FileService {
         return readByteArrayFromBinaryFile(file.getPath());
     }
 
-    public static byte[] writeAndReadByteArrayUsingByteStream(byte[] array) {
+    public static byte[] writeAndReadByteArrayUsingByteStream(byte[] array) throws IOException {
         byte[] resultArray = null;
         try (ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream()) {
             byteArrayOutputStream.write(array);
@@ -105,7 +99,7 @@ public class FileService {
         return readByteArrayFromBinaryFileBuffered(file.getPath());
     }
 
-    public static void writeRectButtonToBinaryFile(File file, RectButton rectButton) {
+    public static void writeRectButtonToBinaryFile(File file, RectButton rectButton) throws IOException {
         try (DataOutputStream dataOutputStream = new DataOutputStream(new FileOutputStream(new File(file.getPath())))) {
             dataOutputStream.writeInt(rectButton.getTopLeft().getX());
             dataOutputStream.writeInt(rectButton.getTopLeft().getY());
@@ -141,7 +135,7 @@ public class FileService {
         return rectButton;
     }
 
-    public static void writeRectButtonArrayToBinaryFile(File file, RectButton[] rects) throws WindowException {
+    public static void writeRectButtonArrayToBinaryFile(File file, RectButton[] rects) throws WindowException, IOException {
         for (RectButton element : rects) {
             try (DataOutputStream dataOutputStream = new DataOutputStream(new FileOutputStream(new File(file.getPath()), true))) {
                 dataOutputStream.writeInt(element.getTopLeft().getX());
@@ -157,7 +151,6 @@ public class FileService {
     public static void modifyRectButtonArrayInBinaryFile(File file) throws IOException {
 
         try (RandomAccessFile randomAccessFile = new RandomAccessFile(new File(file.getPath()), "rw")) {
-            long t = randomAccessFile.length();
             for (int i = 0; i < randomAccessFile.length(); i += 8) {
                 randomAccessFile.seek(i);
                 int x = randomAccessFile.readInt();
@@ -214,12 +207,12 @@ public class FileService {
         }
     }
 
-    public static RectButton readRectButtonFromTextFileOneLine(File file) throws WindowException {
+    public static RectButton readRectButtonFromTextFileOneLine(File file) throws WindowException, IOException {
         RectButton result = null;
+        int elem = 0;
+        String buttonFromStr = null;
+        StringBuilder value = new StringBuilder();
         try (InputStreamReader inputStreamReader = new InputStreamReader(new FileInputStream(new File(file.getPath())))) {
-            int elem = 0;
-            String buttonFromStr = null;
-            StringBuilder value = new StringBuilder();
             while ((elem = inputStreamReader.read()) != -1) {
                 buttonFromStr = value.append(Character.toString(Character.toChars(elem)[0])).toString();
             }
@@ -235,7 +228,7 @@ public class FileService {
         return result;
     }
 
-    public static void writeRectButtonToTextFileSixLines(File file, RectButton rectButton) {
+    public static void writeRectButtonToTextFileSixLines(File file, RectButton rectButton) throws IOException {
         try (BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(new File(file.getPath()))))) {
             bufferedWriter.write(String.valueOf(rectButton.getTopLeft().getX()));
             bufferedWriter.newLine();
@@ -257,7 +250,7 @@ public class FileService {
         }
     }
 
-    public static RectButton readRectButtonFromTextFileSixLines(File file) throws WindowException {
+    public static RectButton readRectButtonFromTextFileSixLines(File file) throws WindowException, IOException {
         RectButton result = null;
         try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(new File(file.getPath()))))) {
             result = new RectButton(new Point(Integer.parseInt(bufferedReader.readLine()), Integer.parseInt(bufferedReader.readLine())), new Point(Integer.parseInt(bufferedReader.readLine()), Integer.parseInt(bufferedReader.readLine())), bufferedReader.readLine(), bufferedReader.readLine());
@@ -271,7 +264,7 @@ public class FileService {
         return result;
     }
 
-    public static void writeTraineeToTextFileOneLine(File file, Trainee trainee) {
+    public static void writeTraineeToTextFileOneLine(File file, Trainee trainee) throws IOException {
         try (BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(new File(file.getPath())), "UTF-8"))) {
             StringJoiner traineeString = new StringJoiner(" ");
             traineeString.add(trainee.getFirstName());
@@ -287,9 +280,9 @@ public class FileService {
         }
     }
 
-    public static Trainee readTraineeFromTextFileOneLine(File file) throws TrainingException {
+    public static Trainee readTraineeFromTextFileOneLine(File file) throws TrainingException, IOException {
         Trainee result = null;
-        try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(new File(file.getPath()))))) {
+        try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(new File(file.getPath())), "UTF-8"))) {
             String traineeString = bufferedReader.readLine();
             result = new Trainee(traineeString.split(" ")[0], traineeString.split(" ")[1], Integer.parseInt(traineeString.split(" ")[2]));
         } catch (FileNotFoundException e) {
@@ -302,7 +295,7 @@ public class FileService {
         return result;
     }
 
-    public static void writeTraineeToTextFileThreeLines(File file, Trainee trainee) {
+    public static void writeTraineeToTextFileThreeLines(File file, Trainee trainee) throws IOException {
         try (BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(new File(file.getPath())), "UTF-8"))) {
             bufferedWriter.write(trainee.getFirstName());
             bufferedWriter.newLine();
@@ -318,9 +311,9 @@ public class FileService {
         }
     }
 
-    public static Trainee readTraineeFromTextFileThreeLines(File file) throws TrainingException {
+    public static Trainee readTraineeFromTextFileThreeLines(File file) throws TrainingException, IOException {
         Trainee result = null;
-        try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(new File(file.getPath()))))) {
+        try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(new File(file.getPath())), "UTF-8"))) {
             result = new Trainee(bufferedReader.readLine(), bufferedReader.readLine(), Integer.parseInt(bufferedReader.readLine()));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -332,7 +325,7 @@ public class FileService {
         return result;
     }
 
-    public static void serializeTraineeToBinaryFile(File file, Trainee trainee) {
+    public static void serializeTraineeToBinaryFile(File file, Trainee trainee) throws IOException {
         try (ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream(new File(file.getPath())))) {
             objectOutputStream.writeObject(trainee);
         } catch (IOException e) {
@@ -340,7 +333,7 @@ public class FileService {
         }
     }
 
-    public static Trainee deserializeTraineeFromBinaryFile(File file) {
+    public static Trainee deserializeTraineeFromBinaryFile(File file) throws IOException {
         Trainee result = null;
         try (ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(new File(file.getPath())))) {
             result = (Trainee) objectInputStream.readObject();
@@ -353,29 +346,37 @@ public class FileService {
     }
 
     public static String serializeTraineeToJsonString(Trainee trainee) {
-        return new Gson().toJson(trainee);
-
+        Gson gson = new Gson();
+        String result = gson.toJson(trainee);
+        return result;
     }
 
     public static Trainee deserializeTraineeFromJsonString(String json) {
-        return new Gson().fromJson(json, Trainee.class);
+        Gson gson = new Gson();
+        Trainee result = gson.fromJson(json, Trainee.class);
+        return result;
     }
 
-    public static void serializeTraineeToJsonFile(File file, Trainee trainee) {
+    public static void serializeTraineeToJsonFile(File file, Trainee trainee) throws IOException {
+        Gson gson = new Gson();
         try (BufferedWriter bufferedJson = new BufferedWriter(new FileWriter(new File(file.getPath())))) {
-            bufferedJson.write(serializeTraineeToJsonString(trainee));
+            gson.toJson(trainee, bufferedJson);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    public static Trainee deserializeTraineeFromJsonFile(File file) {
+    public static Trainee deserializeTraineeFromJsonFile(File file) throws IOException {
         Trainee result = null;
+        Gson gson = new Gson();
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader(new File(file.getPath())))) {
-            result = deserializeTraineeFromJsonString(bufferedReader.readLine());
+            result = gson.fromJson(bufferedReader, Trainee.class);
         } catch (IOException e) {
             e.printStackTrace();
         }
         return result;
     }
+
+
 }
+

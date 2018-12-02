@@ -3,8 +3,6 @@ package net.thumbtack.school.windows.v4;
 import net.thumbtack.school.windows.v4.base.RectWindow;
 import net.thumbtack.school.windows.v4.base.WindowException;
 import net.thumbtack.school.windows.v4.base.WindowState;
-
-import java.io.Serializable;
 import java.util.Objects;
 
 public class RectButton extends RectWindow {
